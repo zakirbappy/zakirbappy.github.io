@@ -1,0 +1,266 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Common Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-size: 18px;
+    color: darkgoldenrod;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 30px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 32px;
+    background-color: goldenrod;
+    color: #e5e7eb;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.button:hover {
+    color: goldenrod;
+    background-color: gold;
+    box-shadow: 0px 0px 5px 0px #8c99ac;
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: goldenrod;
+    color: #e5e7eb;
+}
+
+/* Styles for Header->Navbar Section */
+header {
+    color: gold;
+    background-color: #1f2937;
+}
+
+nav {
+    height: 60px;
+}
+
+ul.nav-links {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    color: goldenrod;
+}
+
+ul.nav-links a {
+    padding: 0 10px;
+}
+
+ul.nav-links li:first-child a {
+    padding-left: 0;
+}
+
+ul.nav-links li:last-child a {
+    padding-right: 0;
+}
+
+li.logo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 18px;
+    color: gold;
+    text-transform: uppercase;
+}
+
+
+/* Style for Header->Hero Section */
+.hero {
+    height: fit-content;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-basis: 400px;
+    gap: 10px;
+}
+
+.hero-image {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.hero-image img {
+    width: auto;
+    height: 100%;
+    border: 5px solid goldenrod;
+    border-radius: 50%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.hero p {
+    color: darkgoldenrod;
+}
+
+
+/* Style for Info Section */
+.info {
+    color: goldenrod;
+    background-color: white;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 160px;
+}
+
+figure:hover > img {
+    box-shadow: 0px 0px 3px 0px #1f2937;
+    border-color: gold;
+}
+
+figure > img {
+    height: 160px;
+    width: 160px;
+    border: 4px solid goldenrod;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+figcaption {
+    color: grey;
+    text-align: center;
+}
+
+figure:hover > figcaption {
+    color: goldenrod;
+}
+
+/* Style for Quote Section */
+.quote {
+    color: goldenrod;
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-box {
+    width: 80%;
+    margin: 60px auto 0 auto;
+}
+
+cite {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+cite::before {
+    content: "-";
+}
+
+
+/* Style for Call-to-Action Section */
+.cta-box {
+    color: #f9faf8;
+    background-color: goldenrod;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.cta-text > h3 {
+    font-size: 24px;
+}
+
+.cta-text > p {
+    color: #e5e7eb;
+    font-weight: 400;
+}
+
+.cta-button {
+    min-width: fit-content;
+    border: 3px solid #e5e7eb;
+}
+
+.cta-button:hover {
+    border-color: darkgoldenrod;
+}
+
+
+/* Style for Footer Section */
+footer {
+    font-size: 16px;
+    color: gold;
+    background-color: darkgoldenrod;
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
